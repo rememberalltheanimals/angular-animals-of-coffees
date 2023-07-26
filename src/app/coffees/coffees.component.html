@@ -1,0 +1,14 @@
+<h1>Cofees Around the World</h1>
+<img src="./assets/coffee.png" width="100px" height="100px">
+<h2>Let's help the coffee bean growing region's animals</h2>
+
+<ul>
+  <li *ngFor="let coffee of coffees">
+    <button [class.selected]="coffee === selectedCoffee" type="button" (click)="onSelect(coffee)">
+      <span>{{coffee.id}}</span>
+      <span>{{coffee.name}}</span>
+    </button>
+  </li>
+</ul>
+
+<app-coffee-detail [coffee]="selectedCoffee"></app-coffee-detail>

@@ -1,0 +1,16 @@
+button {
+  position: relative;
+  background-color: burlywood;
+  display: flex;
+  align-items: stretch;
+  height: 2em;
+}
+
+button:hover {
+  color: brown;
+  background-color: aquamarine;
+}
+
+img {
+  padding: 2em;
+}

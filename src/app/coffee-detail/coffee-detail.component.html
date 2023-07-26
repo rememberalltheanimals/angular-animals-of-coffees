@@ -1,0 +1,13 @@
+<div *ngIf="coffee">
+
+  <h2>{{coffee.name | uppercase}}</h2>
+  <h2>Animals who live in this coffee region:</h2>
+  <div>{{coffee.animals}}</div><br><hr>
+
+  <div>id: {{coffee.id}}</div>
+  <div>
+    <label for="coffee-name">Coffee name: </label>
+    <input [(ngModel)]="coffee.name" placeholder="name">
+  </div>
+  
+</div>
