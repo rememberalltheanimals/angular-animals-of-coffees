@@ -1,0 +1,22 @@
+a {
+  color:black;
+  padding: 1rem;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: .5rem auto;
+  box-sizing: border-box;
+}
+
+a:hover {
+  color:brown;
+}
+
+@media (min-width: 600px) {
+  a {
+    width: 18%;
+    box-sizing: content-box;
+  }
+}

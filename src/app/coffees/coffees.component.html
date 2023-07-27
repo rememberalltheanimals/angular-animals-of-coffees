@@ -4,11 +4,9 @@
 
 <ul>
   <li *ngFor="let coffee of coffees">
-    <button [class.selected]="coffee === selectedCoffee" type="button" (click)="onSelect(coffee)">
+    <a routerLink="/detail/{{coffee.id}}">
       <span>{{coffee.id}}</span>
       <span>{{coffee.name}}</span>
-    </button>
+    </a>
   </li>
 </ul>
-
-<app-coffee-detail [coffee]="selectedCoffee"></app-coffee-detail>

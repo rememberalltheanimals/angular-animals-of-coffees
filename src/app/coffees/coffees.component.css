@@ -14,3 +14,7 @@ button:hover {
 img {
   padding: 2em;
 }
+
+a {
+  text-decoration: none;
+}

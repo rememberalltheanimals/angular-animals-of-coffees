@@ -1,13 +1,14 @@
 <div *ngIf="coffee">
 
-  <h2>{{coffee.name | uppercase}}</h2>
-  <h2>Animals who live in this coffee region:</h2>
-  <div>{{coffee.animals}}</div><br><hr>
+  <h3>{{coffee.name | uppercase}}</h3>
+  <h2>Animals who live in this coffee region :</h2>
+  <h1>{{coffee.animals}}</h1><br><hr>
 
   <div>id: {{coffee.id}}</div>
   <div>
     <label for="coffee-name">Coffee name: </label>
     <input [(ngModel)]="coffee.name" placeholder="name">
   </div>
+  <button type="button" (click)="goBack()">go back</button>
   
-</div>
+</div><hr>
